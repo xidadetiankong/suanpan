@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <TextView
+        android:background="#FFFAFA"
+        android:id="@+id/result_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2"/>
+
+    <TextView
+        android:id="@+id/result_context"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="#FFFAFA"
+        android:textAlignment="viewEnd"
+
+        android:textColor="#555555" />
+
+    <TextView
+        android:id="@+id/input_context"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="#F5F5F5"
+        android:gravity="center_vertical"
+        android:textSize="40sp"
+
+
+        app:autoSizeMaxTextSize="40sp"
+        app:autoSizeMinTextSize="5sp"
+
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform"
+        android:maxLines="3"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/keyboard_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        />
+
+
+</LinearLayout>

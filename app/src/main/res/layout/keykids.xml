@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:clickable="true"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:id="@+id/keyboard_ar"
+
+        android:background="@drawable/recycler_clicked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:id="@+id/key_context"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="早上的鸟儿叽叽喳喳"
+            />
+    </LinearLayout>
+
+</LinearLayout>
